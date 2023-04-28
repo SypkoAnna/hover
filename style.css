@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    background-color: #2f3238;
+ }
+
+img{
+    max-width: 100%;
+}
+
+.marley-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+}
+
+.marley{
+    display: inline-flex;
+    position: relative;
+}
+
+.marley-text h2{
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 1px;
+    transform: translateY(25px);
+    transition: all 0.5s;
+    position: relative;
+}
+
+.marley-text h2 span{
+    font-weight: 800;
+}
+
+.marley-text p{
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transform: translateY(200%);
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.marley:hover p{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.marley-text h2::after{
+    content:'';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    margin-top: 6px;
+    position: absolute;
+    top:200%;
+    right: 0;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.marley:hover h2::after{
+    opacity: 1;
+    top: 100%;
+}
+
+.marley-text{
+    padding: 40px;
+}
+
+.marley:hover h2{
+    transform: translateY(0);
+    transition: 0.3s;
+}
+
+.zoe{
+    position: relative;
+    display: inline-flex;
+    overflow: hidden;
+}
+
+.zoe:hover p{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.zoe:hover .white{
+    transform: translateY(0);
+}
+
+.zoe:hover .zoe-text h2{
+    transform: translateY(0);
+}
+
+.zoe:hover .img i{
+    transform: translateY(0);
+}
+
+.zoe-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.zoe-text p{
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #fff;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    padding: 10px 40px;
+    transform: translateY(25%);
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+.zoe-text h2{
+   color:  #3c4a50;
+   font-size: 30px;
+   font-weight: 300;
+   text-transform: uppercase;
+   transform: translateY(40px);
+   transition: all 0.6s;
+}
+
+.zoe-text h2 span{
+    font-weight: 800;
+}
+
+.white{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    transform:translateY(100%) ;
+    transition: all 0.4s;
+}
+
+.img{
+    font-size: 19px;
+    color: #252d31;
+}
+
+.img i{
+    margin-left: 20px;
+    transform: translateY(40px);
+    transition: all 0.6s;
+}
+
+.img i.fa-eye {
+    transition-delay: 0.1s;
+}
+
+.img i.fa-heart{
+    transition-delay: 0.2s ;
+}
+
+.zoe img{
+    filter: hue-rotate(-2deg);
+}
